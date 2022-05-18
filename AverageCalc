@@ -1,4 +1,4 @@
-
+#sample 2d array
 rows, cols = (20, 7)
 arr = [[0 for i in range(cols)] for j in range(rows)]
 
@@ -8,8 +8,7 @@ for i in range(0, 20):
         #print(i*j, end=' ')
         arr[i][j] = i*j
 
-#print(arr)
-
+#Actual Function
 def avgFunction(array):
     #total
     insCntI = 0
@@ -52,27 +51,6 @@ def avgFunction(array):
             else:
                 print("error")
 
-    #for a in range(0, 20):
-    #    insCntI = insCntI + insCnt[a]
-
-    #for b in range(0, 20):
-    #    avgInsI = avgInsI + avgIns[b]
-    
-    #for c in range(0, 20):
-    #    totalPtsI = totalPtsI + totalPts[c]
-
-    #for d in range(0, 20):
-    #    avgPtsDayI = avgPtsDayI + avgPtsDay[d]
-
-    #for e in range(0, 20):
-    #    numStepsI = numStepsI +  numSteps[e]
-
-    #for f in range(0, 20):
-    #    avgStepsI = avgStepsI + avgSteps[f]
-    
-    #for g in range(0, 20):
-    #    workingDaysI = workingDaysI + workingDays[g]
-
     avgInsI = avgInsI / len(array)
     avgPtsDayI = avgPtsDayI / len(array)
     avgStepsI = avgStepsI / len(array)
@@ -104,7 +82,3 @@ def avgFunction(array):
     return subtotal
 
 avgFunction(arr)
-            
-
-
-#f.close()
