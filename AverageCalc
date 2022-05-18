@@ -10,83 +10,75 @@ for i in range(0, 20):
 
 #print(arr)
 
-def avgFunction(m, arr=[i][j]):
+def avgFunction(array):
     #total
-    insCnt = []
     insCntI = 0
 
     #avg
-    avgIns = []
     avgInsI = 0
 
     #total
-    totalPts = []
     totalPtsI = 0
 
     #avg
-    avgPtsDay = []
     avgPtsDayI = 0
 
     #total
-    numSteps = []
     numStepsI = 0
 
     #avg
-    avgSteps = []
     avgStepsI = 0
 
     #total
-    workingDays = []
     workingDaysI = 0
 
-    for i in range(0, 20):
+    for i in range(len(array)):
 
-        for j in range(0, 7):
+        for j in range(len(array[i])):
             if j == 0:
-                print(m)
-                insCnt[i] = m
+                insCntI = insCntI + array[i][j]
             elif j == 1:
-                avgIns[i] = m
+                avgInsI = avgInsI + array[i][j]
             elif j == 2:
-                totalPts[i] = m
+                totalPtsI = totalPtsI + array[i][j]
             elif j == 3:
-                avgPtsDay[i] = m
+                avgPtsDayI = avgPtsDayI + array[i][j]
             elif j == 4:
-                numSteps[i] = m
+                numStepsI = numStepsI + array[i][j]
             elif j == 5:
-                avgSteps[i] = m
+                avgStepsI = avgStepsI + array[i][j]
             elif j == 6:
-                workingDays[i] = m
+                workingDaysI = workingDaysI + array[i][j]
             else:
                 print("error")
 
-    for a in range(0, 20):
-        insCntI = insCntI + insCnt[a]
+    #for a in range(0, 20):
+    #    insCntI = insCntI + insCnt[a]
 
-    for b in range(0, 20):
-        avgInsI = avgInsI + avgIns[b]
+    #for b in range(0, 20):
+    #    avgInsI = avgInsI + avgIns[b]
     
-    for c in range(0, 20):
-        totalPtsI = totalPtsI + totalPts[c]
+    #for c in range(0, 20):
+    #    totalPtsI = totalPtsI + totalPts[c]
 
-    for d in range(0, 20):
-        avgPtsDayI = avgPtsDayI + avgPtsDay[d]
+    #for d in range(0, 20):
+    #    avgPtsDayI = avgPtsDayI + avgPtsDay[d]
 
-    for e in range(0, 20):
-        numStepsI = numStepsI +  numSteps[e]
+    #for e in range(0, 20):
+    #    numStepsI = numStepsI +  numSteps[e]
 
-    for f in range(0, 20):
-        avgStepsI = avgStepsI + avgSteps[f]
+    #for f in range(0, 20):
+    #    avgStepsI = avgStepsI + avgSteps[f]
     
-    for g in range(0, 20):
-        workingDaysI = workingDaysI + workingDays[g]
+    #for g in range(0, 20):
+    #    workingDaysI = workingDaysI + workingDays[g]
 
-    avgInsI = avgInsI / 20
-    avgPtsDayI = avgPtsDayI / 20
-    avgStepsI = avgStepsI / 20
+    avgInsI = avgInsI / len(array)
+    avgPtsDayI = avgPtsDayI / len(array)
+    avgStepsI = avgStepsI / len(array)
 
     subtotal = [insCntI, avgInsI, totalPtsI, avgPtsDayI, numStepsI, avgStepsI, workingDaysI]
-    print(insCntI)
+    print(subtotal)
     return subtotal
 
 avgFunction(arr)
