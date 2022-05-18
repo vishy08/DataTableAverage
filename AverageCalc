@@ -78,6 +78,28 @@ def avgFunction(array):
     avgStepsI = avgStepsI / len(array)
 
     subtotal = [insCntI, avgInsI, totalPtsI, avgPtsDayI, numStepsI, avgStepsI, workingDaysI]
+    print("Inspections Count:")
+    print(subtotal[0])
+    print("\n")
+    print("Avg Inspections per Day:")
+    print(subtotal[1])
+    print("\n")
+    print("Total Points:")
+    print(subtotal[2])
+    print("\n")
+    print("Avg Points per Day:")
+    print(subtotal[3])
+    print("\n")
+    print("Number of Stops:")
+    print(subtotal[4])
+    print("\n")
+    print("Avg Stops per Day:")
+    print(subtotal[5])
+    print("\n")
+    print("Working Days:")
+    print(subtotal[6])
+    print("\n")
+    print("Total Subtotal Arrray:")
     print(subtotal)
     return subtotal
 
